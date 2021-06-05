@@ -1,0 +1,159 @@
+body{
+  background-color: gray;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#container{
+  /* 50px * 2 + 10px * 2 */
+  margin: 16px auto;
+}
+
+#wrapper{
+  text-align: center;
+}
+
+#board{
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#board li{
+  background-color: #00aaff;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 4px 0 #0088cc;
+}
+
+#top{
+  background-color: #00aaff;
+  width: 200px;
+  height: 40px;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 4px 0 #0088cc;
+}
+
+#board li.text{
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: none;
+  color: black;
+}
+
+#level{
+  height: 40px;
+  width: 120px;
+  font-size: 18px;
+  transform: translateY(4px);
+  margin-right: 20px;
+}
+
+#board li.pressed{
+  background-color: #ccc;
+  box-shadow: none;
+  margin-top: 9px;
+  margin-bottom: 1px;
+}
+
+#btn.pressed{
+  display: none;
+}
+
+#timer{
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#btn{
+  cursor: pointer;
+  user-select: none;
+  background-color: #f44336;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 0 #d1483e;
+  margin-top: 10px;
+}
+
+#set{
+  width: 100px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #f44336;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 0 #d1483e;
+  margin-top: 10px;
+  color: white;
+}
+
+#btn:active{
+  margin-top: 12px;
+  box-shadow: none;
+}
+
+#set:active{
+  margin-top: 12px;
+  box-shadow: none;
+}
+
+.discription{
+  background-color: wheat;
+  color: black;
+  border-radius: 16px;
+  padding-bottom: 10px;
+}
+
+.discription p{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.discription ul{
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.discription ul li{
+  padding: 4px;
+}
+
+.hidden{
+  display: none;
+}

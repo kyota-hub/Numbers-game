@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbers</title>
+  <meta name="description" content="あなたの情報処理能力は？">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    Numbers
+  </header>
+  <div id="container">
+    <div id="timer"class="hidden">0.0</div>
+    <ul id="board">
+      <li class="text">難易度を選択してください</li>
+    </ul>
+    <div id="wrapper">
+      <select id="level">
+        <option value="1">難易度：1</option>
+        <option value="2">難易度：2</option>
+        <option value="3" selected>難易度：3</option>
+        <option value="4">難易度：4</option>
+        <option value="5">難易度：5</option>
+        <option value="6">難易度：6</option>
+        <option value="7">難易度：7</option>
+        <option value="8">難易度：8</option>
+        <option value="9">難易度：9</option>
+        <option value="10">難易度：10</option>
+      </select>
+      <button id="set">決定</button>
+    </div>
+    <div id="btn" class="pressed">START</div>
+  </div>
+  <div class="discription">
+    <p>〜ルール〜</p>
+    <ul>
+      <li>難易度を選択し決定をタッチします。</li>
+      <li>STARTを押すと白い枠内に数字が出現します。</li>
+      <li>小さい数字から順にタッチ！</li>
+      <li>全ての数字をタッチすると画面上のタイマーが停止します。</li>
+    </ul>
+  </div>
+  <div id="top" class="hidden">難易度を選び直す</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
